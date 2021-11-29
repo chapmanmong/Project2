@@ -4,7 +4,7 @@
    1. [Data Sources](#SubParagraph1)
    2. [Technology Stack](#Subparagraph2) 
    3. [Coding and Release Standards](#Subparagraph3)
-3. [Data Cleanse and Visualisation](#Paragraph2)
+3. [Data Cleanse and Model Evaluation](#Paragraph2)
    1. [Data Cleanse](#SubParagraph4)
    2. [Model- Summary](#SubParagraph5)
    3. [Model- Prediction](#Subparagraph6) 
@@ -17,8 +17,9 @@
 
 ## Introduction- Project In the News <a name="Introduction"></a>
 
-ACT-Right is an investment advisory firm that has requested an evaluation of media impact on the price of stocks. Project In the News seeks to answer the following questions using established Natural Language Processing Models:
-- Is there any correlation between the stock price and it being in the news? 
+ACT-Right is a financial investment advisory firm that has requested an evaluation of media impact on the price of stocks. Project In the News seeks to answer the following questions using established Natural Language and Long Short Term Memory Processing Models:
+
+- Is there any correlation between the stock price and its sentiment? 
 - Does any particular media outperform in this respect?
 - Are only certain stocks influenced by media?
 - Should ACT-Right base their recommendations on this model?
@@ -32,24 +33,23 @@ Multiple media channels covering Social media as well as tranditional News chann
 - News API 
 
 Data Source:
-[Reddit](https://www.kaggle.com/c/winwinewine/data)
-[Twitter](https://www.kaggle.com/c/winwinewine/data)
-[NewsAPI](https://www.kaggle.com/c/winwinewine/data)
-[Alpaca](https://www.kaggle.com/c/winwinewine/data)
+[Reddit](https://www.reddit.com/dev/api/)
+[Twitter](?)
+[NewsAPI](https://newsapi.org/docs)
 
-Additionally, the American 10-k reports (company financial statements) has been sourced using API [American Census Data](https://api.census.gov/data/2019)
+The Alpaca trading platform has been used to retreive the ticker price data for 7 days.
+[Alpaca](https://alpaca.markets/docs/api-documentation/)
+
+Keys will be required for all of the above.
 
 ### Technology Stack <a name="subparagraph2"></a>
 
 The following additional technologies have been deployed:
 - Vader Sentiment Analysis
-- SpaCy
-- Twitter API Key
-- Reddit API Key
-- NewsAPI Key
+- Amazon Sagemaker
+- Scikit Learn
+- XXXX model
 
-
-The Jupyter Notebook has been deployed to AWS and the relevant Sagemaker Jupyter Notebook has been made available in the repository.
 
 ### Coding and Release Standards <a name="subparagraph3"></a>
 
@@ -62,38 +62,37 @@ Following rules have been applied during code development and testing:
 6. A git hub repository called Project2 must be set up with branches for each developer.
 7. Each release must provide a brief message on changes made prior to committing the code.
 
-## Data Cleanse and Visualisation <a name="paragraph2"></a>
+## Data Cleanse and Model Evaluation <a name="paragraph2"></a>
 ### Data Cleanse <a name="subparagraph4"></a>
 
 The following data cleanse rules have been applied to the source data set:
 
-1. Identified data set must be formatted correctly prior to use- Date format yyyy/mm/dd, amount must be integer.
-2. Redundant data, if any, must be dropped- drop columns Z_CostContact', 'Z_Revenue', 'Response', 'MntGoldProds'.
-3. Duplicates, if any must be dropped.
-4. Sentence segmentation and tokenisation of all data sets
-5. Remove Stopwords
-6. Lemmatization of words
-7. Ensure all dataframe columns have appropriate and correct headers.
-8. Group records into appropriate sub categories- 
-9. Ensure records are sorted on the required fields.
-10. Validate that entire data set has been correctly loaded.
-
-
+1. Identified data set must be formatted correctly prior to use- Date format yyyy/mm/dd New York time zone.
+2. The date range set to last 7 days as Twitter data is available only for last 7 days.
+3. Redundant data, if any, must be dropped- retained only Compound score for sentiment analysis.
+4. Duplicates, if any must be dropped.
+5. All dataframe columns have appropriate and correct headers.
+6. Records are sorted on the required fields.
+7. Validate that entire data set has been correctly loaded.
 
 
 ### Model- Summary <a name="subparagraph5"></a>
 
-Post data pre processing, the data has been split into train and test data in the ratio of 80:20? The Vader Sentiment Model then has been applied to to predict the sentiment polarity.
+Post pre processing, Vader Sentiment analysis has been used to determine the sentiment for each of the stocks. The closing prices and percentage change has been used in the XXXX to predict the ticker sentiment (target).
 
+This dataframe has then been split into train and test data with the target being the percentage change in closing prices.
 
 
 ### Model- Prediction <a name="subparagraph6"></a>
-Below is the visual representation of the analysis:
-![Total Wine Sales per Income Bracket](https://github.com/chirathlv/Project1/blob/Renu/Images/Total%20Wine%20Sales%20per%20Income%20Bracket.png)
+The XXXX model has been applied to predict the sentiment and the visualisation of its impact on the closing price of a stock.
 
 
 ### Model- Evaluation with Visualisations <a name="subparagraph7"></a>
 
+Below is the visual representation of the analysis:
+![Percent  change in closing prices](https://github.com/chirathlv/Project1/blob/Renu/Images/Total%20Wine%20Sales%20per%20Income%20Bracket.png)
+
+![Predicted chnage versus actual]
 
 
 ### Key Findings <a name="subparagraph8"></a>
@@ -114,5 +113,6 @@ Below is the visual representation of the analysis:
 
 
 ## References <a name="paragraph4"></a>
-
-1. [(https://www.kaggle.com/)]
+(https://www.reddit.com/dev/api/)
+(https://newsapi.org/docs)
+(https://alpaca.markets/docs/api-documentation/)

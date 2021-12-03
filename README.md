@@ -96,6 +96,8 @@ The Linear Regression has been applied to predict the sentiment and the visualis
 Below is the visual representation of the analysis:
 ![NewsAPI Sentiment versus Percent Change](https://github.com/chapmanmong/Project2/blob/main/NewsAPI%20Sentiment%20versus%20percent%20change.PNG)
 
+
+
 ![Predicted chnage versus actual]
 
 

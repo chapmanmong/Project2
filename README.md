@@ -94,7 +94,7 @@ The Linear Regression has been applied to predict the sentiment and the visualis
 ### Model- Evaluation with Visualisations <a name="subparagraph7"></a>
 
 Below is the visual representation of the analysis:
-![Percent  change in closing prices](https://github.com/chirathlv/Project1/blob/Renu/Images/Total%20Wine%20Sales%20per%20Income%20Bracket.png)
+![NewsAPI Sentiment versus Percent Change](https://github.com/chapmanmong/Project2/blob/main/NewsAPI%20Sentiment%20versus%20percent%20change.PNG)
 
 ![Predicted chnage versus actual]
 

@@ -19,7 +19,7 @@
 
 ACT-Right is a investment advisory firm that has requested an evaluation of media impact on the price of stocks. Project In the News seeks to answer the following questions using established Natural Language and Linear Regression Model:
 
-- Can the sentiment for a stock  be determined by it being in the news?
+- Can the sentiment for a stock be determined based on it being in the news?
 - Is there any relationship between stock price and its sentiment? 
 - Can sentiment be used to predict price of a stock?
 - Should ACT- Right use the developed model?
@@ -27,7 +27,7 @@ ACT-Right is a investment advisory firm that has requested an evaluation of medi
 ## Data, Technology and Coding Standards <a name="paragraph1"></a>
 ### Data Sources <a name="subparagraph1"></a>
 
-Multiple media channels covering Social media as well as tranditional News channels were reviewed- the folowing have been used in this project:
+Multiple media channels covering Social media as well as tranditional news channels were reviewed- the following have been used in this project:
 
 - Reddit
 - Twitter
@@ -66,8 +66,8 @@ Following rules have been applied during code development and testing:
 
 The following data cleanse rules have been applied to the source data set:
 
-1. Identified data set must be formatted correctly prior to use- Date format yyyy/mm/dd- New York time zone.
-2. The date range set to last 30 days except for Twitter as this data is available only for last 7 days.
+1. Identified data set must be formatted correctly prior to use- Date format yyyy/mm/dd.
+2. The date range for source data is set to last 30 days except for Twitter as this data is available only for last 7 days.
 3. Redundant data, if any, must be dropped.
 4. Duplicates, if any must be dropped.
 5. All dataframe columns have appropriate and correct headers.
@@ -76,7 +76,7 @@ The following data cleanse rules have been applied to the source data set:
 
 ### Model- Summary <a name="subparagraph5"></a>
 
-- Post pre processing, Vader Sentiment analysis has been used to determine the sentiment for each of the stocks. 
+- Post data pre processing, Vader Sentiment analysis has been used to determine the sentiment for each of the stocks. 
 - Linear Regression Model has been used to predict prices.
 - The high, low, close, volume, percentage change and the compound sentiment have been used as features.
 - The closing prices is set as target (y).

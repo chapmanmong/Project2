@@ -110,7 +110,7 @@ The Vader sentiment tool can be used to determine the "sentiment" associated wit
 
 2. Is there any relationship between the stock price and its sentiment? 
 
-Based on the model and the limited data available, it is difficult to provide conclusibve evidence of correlation between sentiment and stock price.
+Based on the model and the limited data available, it is difficult to provide conclusive evidence of correlation between sentiment and stock price.
 
 3. Can the sentiment be used to predict price of a stock?
 

@@ -36,7 +36,7 @@ Multiple media channels covering Social media as well as traditional news channe
 Data Sources:
 
 [Reddit](https://www.reddit.com/dev/api/)
-[Twitter](?)
+[Twitter](https://developer.twitter.com/en/docs/twitter-api)
 [NewsAPI](https://newsapi.org/docs)
 
 The Alpaca trading platform has been used to retrieve the ticker price data for 7 days.

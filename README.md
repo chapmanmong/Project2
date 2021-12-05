@@ -17,12 +17,14 @@
 
 ## Introduction- Project In the News <a name="Introduction"></a>
 
-ACT-Right is a investment advisory firm that has requested an evaluation of the media impact on the price of stocks. Project In the News seeks to answer the following questions using established Natural Language and Linear Regression Model:
+ACT-Right is a investment advisory firm that has requested an evaluation of the media impact on the price of stocks. Project In the News seeks to answer the following questions using established Natural Language Processing and Linear Regression Model:
 
 - Can the sentiment for a stock be determined based on it being in the news?
 - Is there any relationship between stock price and its sentiment? 
 - Can sentiment be used to predict price of a stock?
 - Should ACT- Right use the developed model?
+
+A dynamic real time model with entry for a single ticker code and ticker name has been developed.
 
 ## Data, Technology and Coding Standards <a name="paragraph1"></a>
 ### Data Sources <a name="subparagraph1"></a>
@@ -64,7 +66,7 @@ Following rules have been applied during code development and testing:
 ## Data Cleanse and Model Evaluation <a name="paragraph2"></a>
 ### Data Cleanse <a name="subparagraph4"></a>
 
-The following data cleanse rules have been applied to the source data set:
+The following data cleanse rules have been applied to the source data set after the entry of ticker code e.g. TSLA and ticker text e.g. tesla:
 
 1. Identified data set must be formatted correctly prior to use- Date format yyyy/mm/dd.
 2. The date range for source data is set to the maximum permitted for each source e.g. Twitter is 7 days, NewsAPI is 30 days, Alpaca is 6 months while Reddit is based on number of tweets.

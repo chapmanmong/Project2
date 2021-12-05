@@ -39,7 +39,7 @@ Data Sources:
 [Twitter](https://developer.twitter.com/en/docs/twitter-api)
 [NewsAPI](https://newsapi.org/docs)
 
-The Alpaca trading platform has been used to retrieve the ticker price data for 7 days.
+The Alpaca trading platform has been used to retrieve the ticker price data.
 [Alpaca](https://alpaca.markets/docs/api-documentation/)
 
 Keys will be required for all of the above.
@@ -51,7 +51,6 @@ The following additional technologies have been deployed:
 - Amazon Sagemaker
 - Scikit Learn
 
-
 ### Coding and Release Standards <a name="subparagraph3"></a>
 
 Following rules have been applied during code development and testing:
@@ -61,7 +60,6 @@ Following rules have been applied during code development and testing:
 4. A git hub repository called Project2 must be set up.
 5. Each release must provide a brief message on changes made prior to committing the code.
 6. On successful testing of the code in Jupyter Labs, the notebook must be deployed to AWS- Sagemaker environment.
-
 
 ## Data Cleanse and Model Evaluation <a name="paragraph2"></a>
 ### Data Cleanse <a name="subparagraph4"></a>
@@ -101,10 +99,6 @@ The Linear Regression Model has been applied to predict the percent change in cl
 A simple line chart has been used to visualise the results.
 
 ![TSLA Model Visualisation](https://github.com/chapmanmong/Project2/blob/main/images/TSLA%20Combined%20score.PNG)
-
-
-
-
 
 ### Key Findings <a name="subparagraph8"></a>
 

@@ -81,9 +81,9 @@ The following data cleanse rules have been applied to the source data set:
 
 - Post data pre processing, Vader Sentiment analysis has been used to determine the sentiment for each of the stocks. 
 - Linear Regression Model has been used to predict percent change in closing prices.
-- The Vader compound sentiment score of each media have been used as features (x). 
+- The Vader compound sentiment score of each media and stock trading volumes have been used as features (x). 
 - The percent change of closing prices is set as the target (y).
-- This dataframe has then been split into train and test data based on the limited data.
+- This dataframe has then been split into train and test data based on the limited data available.
 - The train data has been used to fit the model.
 - The test data has been used to predict.
 - The predictions have been visualised for comparison purposes.
@@ -91,7 +91,7 @@ The following data cleanse rules have been applied to the source data set:
 An additional model for NewsAPI sentiment has also been set up. 
 
 ### Model- Prediction <a name="subparagraph6"></a>
-The Linear Regression has been applied to predict the sentiment. A simple bar and line chart has been used to visualise the results.
+The Linear Regression Model has been applied to predict the percent change in closing price of stock. A simple line chart has been used to visualise the results.
 
 
 ### Model- Evaluation with Visualisations <a name="subparagraph7"></a>
@@ -110,7 +110,7 @@ The Vader sentiment tool can be used to determine the "sentiment" associated wit
 
 2. Is there any relationship between the stock price and its sentiment? 
 
-Based on the model and the limited data, it appears that there is a degree of correlation between sentiment and stock price.
+Based on the model and the limited data available, it is difficult to provide conclusibve evidence of correlation between sentiment and stock price.
 
 3. Can the sentiment be used to predict price of a stock?
 

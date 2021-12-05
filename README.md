@@ -97,9 +97,9 @@ The Linear Regression Model has been applied to predict the percent change in cl
 ### Model- Evaluation with Visualisations <a name="subparagraph7"></a>
 
 Below is the visual representation of the analysis:
-![Sentiment versus Percent  change in closing prices]http://localhost:8888/lab/tree/Project2/Images/NewsAPI%20Sentiment%20versus%20percent%20change.PNG
+![TSLA Model Predictions)https://github.com/chapmanmong/Project2/blob/main/images/TSLA%20Combined%20Results.PNG
 
-![Predicted chnage versus actual]
+![TSLA Model Visualisation]
 
 
 ### Key Findings <a name="subparagraph8"></a>

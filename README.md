@@ -91,12 +91,16 @@ The following data cleanse rules have been applied to the source data set:
 An additional model for NewsAPI sentiment has also been set up. 
 
 ### Model- Prediction <a name="subparagraph6"></a>
-The Linear Regression Model has been applied to predict the percent change in closing price of stock. A simple line chart has been used to visualise the results.
+
+The Linear Regression Model has been applied to predict the percent change in closing price of stock. Below are the results.
+
 ![TSLA Model Predictions](https://github.com/chapmanmong/Project2/blob/main/images/TSLA%20Combined%20Results.PNG)
 
 ### Model- Evaluation with Visualisations <a name="subparagraph7"></a>
 
-![TSLA Model Visualisation](https://github.com/chapmanmong/Project2/blob/main/images/TSLA%20Combined%20Results.PNG)
+A simple line chart has been used to visualise the results.
+
+![TSLA Model Visualisation](https://github.com/chapmanmong/Project2/blob/main/images/TSLA%20Combined%20score.PNG)
 
 
 

@@ -81,7 +81,7 @@ The following data cleanse rules have been applied to the source data set after 
 
 - Post data pre processing, Vader Sentiment analysis has been used to determine the sentiment for each of the stocks. 
 - Linear Regression Model has been used to predict percent change in closing prices.
-- The Vader compound sentiment score of each media and stock trading volumes have been used as features (x). 
+- The average Vader compound sentiment score of each media and stock trading volumes have been used as features (x). 
 - The percent change of closing prices is set as the target (y).
 - This dataframe has then been split into train and test data based on the limited data available.
 - The train data has been used to fit the model.
